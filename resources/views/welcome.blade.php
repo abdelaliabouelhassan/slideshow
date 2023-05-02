@@ -10,13 +10,16 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
 
        
-        @vite('resources/css/app.css')
+        {{-- @vite('resources/css/app.css') --}}
+         <link rel="stylesheet" href="{{asset('build/assets/app-5db5374b.css')}}">
+         <link rel="stylesheet" href="{{asset('build/assets/app-6537b069.css')}}">
+         <script type="module" src="{{asset('build/assets/app-623be585.js')}}"></script>
       
     </head>
     <body class="antialiased bg-gray-300 overflow-hidden">
         <div id="app" class=" w-full h-screen  ">
             <app-slider :images="{{$images}}"></app-slider>
         </div>
-        @vite('resources/js/app.js')
+        {{-- @vite('resources/js/app.js') --}}
     </body>
 </html>
